@@ -31,8 +31,10 @@ dist/
 .DS_Store
 
 # Data
-data/
-results/
+data/raw/
+data/processed/
+outputs/
+figures/
 
 # Large climate / forecast files
 *.nc
