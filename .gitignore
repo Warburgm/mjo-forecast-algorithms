@@ -30,11 +30,15 @@ dist/
 # macOS
 .DS_Store
 
-# Data
-data/raw/
-data/processed/
-outputs/
-figures/
+# IDE / editor
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
 
 # Large climate / forecast files
 *.nc
@@ -43,10 +47,20 @@ figures/
 *.grib2
 *.zarr
 
-# Tables / intermediate outputs
-*.csv
+# Tabular data and generated outputs
 *.parquet
 *.feather
+
+# Data
+data/*
+!data/sample/
+!data/sample/*.csv
+
+# Optional raw/processed/output folders
+data/raw/
+data/processed/
+outputs/
+figures/
 
 # Figures / exported graphics
 *.png
