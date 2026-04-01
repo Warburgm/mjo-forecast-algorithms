@@ -50,20 +50,21 @@ src/mjo/
     models.py      # regression models
     forecast.py    # forecast generation
 
-scripts/
-    run_albany.py
-    run_chicago.py
+scripts/run_city.py
 
 notebooks/
     exploration notebooks
 ```
 
-## Usage
+## Quick Start
 
 Example:
 
 ```
-PYTHONPATH=src python scripts/run_albany.py
+conda env create -f environment.yml
+conda activate mjo-forecast
+PYTHONPATH=src python scripts/run_city.py Albany data/sample/Albany_temp_sample.csv
+PYTHONPATH=src python scripts/run_city.py Chicago data/sample/Chicago_temp_sample.csv
 ```
 
 ## Future Work
